@@ -1,0 +1,221 @@
+body {
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+  width: 47px;
+  height: 47px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+  left: 20px;
+  background-image: url(../images/backbutton.png);
+}
+.slides-navigation a.next {
+  right: 20px;
+  background-image: url(../images/forwardbutton.png);
+}
+
+.titleMessage {
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  width: 100%;
+  height: 250 px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -75px;
+}
+
+.titleMessage .heading p {
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+.titleMessage .heading .main {
+  font-size: 50px;
+}
+
+.titleMessage .heading .sub {
+  font-size: 35px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.aboutImage {
+  max-width: 100%;
+}
+.skillsSection,
+.contactSection {
+  background-color: #40c057;
+  color: rgb(0, 0, 0);
+}
+
+.skill {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.chart .percent {
+  color: black;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+.chart .percent:after {
+  content: "%";
+}
+
+.squareItem {
+  margin-top: 30px;
+  position: relative;
+}
+
+.squareInnerContainer {
+  position: relative;
+  padding: 50px 15px 35px;
+  text-align: center;
+  border: solid black;
+  border-top: none;
+}
+.squareInnerContainer::before,
+.squareInnerContainer::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 30%;
+  border-bottom: 2px solid black;
+}
+
+.squareInnerContainer::before {
+  right: 0px;
+}
+.squareInnerContainer::after {
+  left: 0px;
+}
+
+.squareContent h2 {
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: black;
+}
+
+.squareContent h3 {
+  font-size: 13px;
+  font-weight: 600px;
+  margin: 0;
+}
+
+.squareIcon {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  width: 40%;
+  height: 60px;
+  font-size: 45px;
+  margin-left: -20%;
+  color: black;
+}
+
+.contactButton {
+  color: black;
+  padding: 15px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 2px solid black;
+  font-size: 35px;
+  border-radius: 12px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #40c057;
+  background-color: black;
+}
+
+.copyrightSection {
+  background-color: black;
+  color: #40c057;
+  padding: 30px 5px;
+}
+
+.copyrightSection p {
+  margin: 0;
+}
+
+#navigation {
+  background-color: #40c057;
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: black;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: black;
+}
+
+.navbar-toggler-icon {
+  background: url(../icons-menu.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.loader .inner {
+  width: 100%;
+  height: 100%;
+  background: url(../images/loadrocket.gif) center center no-repeat;
+}
