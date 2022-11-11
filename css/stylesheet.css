@@ -1,7 +1,7 @@
 body {
   font-size: 14px;
   color: black;
-  background-color: white;
+  background-color: #0b0b45;
   letter-spacing: 1px;
 }
 
@@ -10,7 +10,7 @@ body {
   height: 100%;
   position: absolute;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #0b0b45;
 }
 
 .slides-navigation .prev,
@@ -24,10 +24,26 @@ body {
 .slides-navigation a.prev {
   left: 20px;
   background-image: url(../images/backbutton.png);
+  transition: 0.5s ease;
 }
 .slides-navigation a.next {
   right: 20px;
   background-image: url(../images/forwardbutton.png);
+  transition: 0.5s ease;
+}
+
+.slides-navigation a.prev:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 0.5s ease;
+}
+
+.slides-navigation a.next:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 0.5s ease;
 }
 
 .titleMessage {
@@ -56,16 +72,35 @@ body {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 30px 0;
+  border-bottom: solid #fff;
 }
 
 .aboutImage {
-  max-width: 100%;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  margin-top: 5px;
+  border: 2px solid #ffffff;
 }
+
+.aboutImage:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  border: 5px solid #40c057;
+}
+
+#about {
+  margin-top: 15px;
+}
+
 .skillsSection,
 .contactSection {
-  background-color: #40c057;
-  color: rgb(0, 0, 0);
+  background-color: #0b0b45;
+  color: rgb(255, 255, 255);
 }
 
 .skill {
@@ -87,13 +122,14 @@ body {
   right: 0;
 }
 .chart .percent {
-  color: black;
+  color: rgb(255, 255, 255);
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
 }
 .chart .percent:after {
   content: "%";
+  color: rgb(255, 255, 255);
 }
 
 .squareItem {
@@ -105,7 +141,7 @@ body {
   position: relative;
   padding: 50px 15px 35px;
   text-align: center;
-  border: solid black;
+  border: solid rgb(255, 255, 255);
   border-top: none;
 }
 .squareInnerContainer::before,
@@ -114,7 +150,7 @@ body {
   position: absolute;
   top: 0px;
   width: 30%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .squareInnerContainer::before {
@@ -128,7 +164,7 @@ body {
   font-size: 56px;
   margin-bottom: 10px;
   font-weight: 400;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .squareContent h3 {
@@ -145,15 +181,15 @@ body {
   height: 60px;
   font-size: 45px;
   margin-left: -20%;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .contactButton {
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 15px 25px;
   display: inline-block;
   margin-top: 20px;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   font-size: 35px;
   border-radius: 12px;
 }
@@ -161,11 +197,12 @@ body {
 .contactButton:hover {
   text-decoration: none;
   color: #40c057;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #40c057;
 }
 
 .copyrightSection {
-  background-color: black;
+  background-color: #0b0b45;
   color: #40c057;
   padding: 30px 5px;
 }
@@ -175,21 +212,23 @@ body {
 }
 
 #navigation {
-  background-color: #40c057;
-  padding: 20px 10px;
+  background-color: #0b0b45;
   z-index: 100;
   width: 100%;
+  border-bottom: solid #fff;
+  border-top: solid #fff;
 }
 
 #navigation li {
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
-#navigation li a {
-  color: black;
+.navbar-brand {
+  padding-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
 }
 
-.navbar-brand,
 .navbar-brand:hover {
   color: black;
 }
@@ -218,4 +257,137 @@ body {
   width: 100%;
   height: 100%;
   background: url(../images/loadrocket.gif) center center no-repeat;
+}
+
+.col-md-7 {
+  max-width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: #fff;
+}
+
+.col-md-7 h4 {
+  color: #40c057;
+}
+
+.nav-link {
+  transition: 0.5s ease;
+  font-size: large;
+  font-weight: 800;
+  font-family: monospace;
+  color: #40c057;
+}
+
+.nav-link:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 0.5s ease;
+  font-weight: 2000;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.col-md-12 h2 {
+  color: #40c057;
+}
+
+.container h2 {
+  text-align: center;
+  color: #40c057;
+}
+
+.statsSection {
+  padding-bottom: 45px;
+}
+
+.statsSection h3 {
+  color: #fff;
+  font-size: larger;
+}
+
+.projects h2 {
+  text-align: center;
+  color: #40c057;
+  padding: 30px 0;
+}
+
+.dice {
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+}
+.land {
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+}
+.heroes {
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+}
+.employee {
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+}
+.binary {
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+}
+.vanilla {
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+}
+
+.dice:hover,
+.land:hover,
+.heroes:hover,
+.employee:hover,
+.binary:hover,
+.vanilla:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 0.5s ease;
+  border: 5px solid #40c057;
+}
+
+.projone {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.projtwo {
+  display: flex;
+  justify-content: center;
+}
+.projthree {
+  display: flex;
+  justify-content: center;
+}
+
+.projectpics {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+  border-bottom: solid #fff;
+}
+
+.navbar-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
