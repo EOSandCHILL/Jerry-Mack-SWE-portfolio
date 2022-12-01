@@ -50,7 +50,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   position: absolute;
   width: 100%;
-  height: 250 px;
+  height: 250px;
   top: 50%;
   z-index: 5;
   text-align: center;
@@ -78,8 +78,8 @@ body {
 
 .aboutImage {
   border-radius: 8px;
-  width: 100%;
   height: auto;
+  width: 100%;
   transition: 0.5s ease;
   margin-top: 5px;
   border: 2px solid #ffffff;
@@ -234,7 +234,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  background: url(../icons-menu.png);
+  background: url(../images/hamburger.png);
   background-size: 100%;
 }
 
@@ -280,11 +280,6 @@ body {
 }
 
 .nav-link:hover {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-  transition: 0.5s ease;
-  font-weight: 2000;
   letter-spacing: 5px;
   color: white;
 }
@@ -390,4 +385,19 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
+}
+
+.contentSection h2 {
+  text-align: center;
+  color: #40c057;
+  padding-bottom: 20px;
+}
+
+.contentSection {
+  padding-bottom: 40px;
+}
+
+iframe {
+  border-radius: 8px;
+  border: 3px solid #ffffff;
 }
