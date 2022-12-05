@@ -15,7 +15,7 @@ $(document).ready(function () {
     strings: [
       "Software Engineer",
       "Digital Creator",
-      "Web Designer",
+      "Web Developer",
       "Marine Corps Veteran",
     ],
     typeSpeed: 45,
