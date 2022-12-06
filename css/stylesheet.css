@@ -82,10 +82,15 @@ body {
   width: 100%;
   margin-top: 5px;
   border: 2px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .aboutImage:hover {
-  border: 5px solid #40c057;
+  transition: 0.5s ease;
+  box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
+  border: 3px solid #40c057;
+  transition: 0.5s ease;
 }
 
 #about {
@@ -177,23 +182,6 @@ body {
   font-size: 45px;
   margin-left: -20%;
   color: rgb(255, 255, 255);
-}
-
-.contactButton {
-  color: rgb(255, 255, 255);
-  padding: 15px 25px;
-  display: inline-block;
-  margin-top: 20px;
-  border: 2px solid rgb(255, 255, 255);
-  font-size: 35px;
-  border-radius: 12px;
-}
-
-.contactButton:hover {
-  text-decoration: none;
-  color: #40c057;
-  background-color: rgb(255, 255, 255);
-  border: 4px solid #40c057;
 }
 
 .copyrightSection {
@@ -294,31 +282,43 @@ body {
   border-radius: 8px;
   margin: 0 10px;
   border: 3px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .land {
   border-radius: 8px;
   margin: 0 10px;
   border: 3px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .heroes {
   border-radius: 8px;
   margin: 0 10px;
   border: 3px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .fit-log {
   border-radius: 8px;
   margin: 0 10px;
   border: 3px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .binary {
   border-radius: 8px;
   margin: 0 10px;
   border: 3px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .vanilla {
   border-radius: 8px;
   margin: 0 10px;
   border: 3px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .dice:hover,
@@ -327,7 +327,10 @@ body {
 .fit-log:hover,
 .binary:hover,
 .vanilla:hover {
-  border: 5px solid #40c057;
+  border: 3px solid #40c057;
+  box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
+  border: 3px solid #40c057;
+  transition: 0.5s ease;
 }
 
 .projone {
@@ -372,6 +375,14 @@ body {
 iframe {
   border-radius: 8px;
   border: 3px solid #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+iframe:hover {
+  box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
+  border: 3px solid #40c057;
+  transition: 0.5s ease;
 }
 
 .recents {
@@ -470,4 +481,155 @@ iframe {
 .stack:hover {
   color: #fff;
   cursor: pointer;
+}
+
+.col-md-12 {
+  padding: 0;
+}
+
+.contact-container {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: #0b0b45;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 100%;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: #40c057;
+}
+
+form input,
+form textarea {
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  background: rgb(212, 212, 212);
+  font-size: 16px;
+  transition: 0.5s ease;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: #40c057;
+}
+
+/* form button {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  transition: 0.5s ease;
+} */
+
+form:hover {
+  border: 3px solid #40c057;
+  box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
+  border: 3px solid #40c057;
+  transition: 0.5s ease;
+  /* -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  transition: 0.5s ease; */
+}
+form input:hover,
+form textarea:hover {
+  border: 3px solid #40c057;
+  background: rgb(255, 255, 255);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+
+/* form button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+} */
+
+.btn-container {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.button {
+  width: 170px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.button-1 {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  transition: 0.5s ease;
+  color: #40c057;
+}
+.button-1:hover {
+  box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
+  border: 3px solid #40c057;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+
+.contact-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contactButton {
+  color: rgb(255, 255, 255);
+  padding: 20px 25px;
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 35px;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+
+.contactButtons {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 15px 15px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: #40c057;
+}
+
+.contactButton:hover {
+  box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
+  border: 3px solid #40c057;
+  color: #40c057;
+  transition: 0.5s ease;
 }
