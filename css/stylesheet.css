@@ -63,6 +63,7 @@ body {
   font-weight: 100;
   letter-spacing: 7px;
 }
+
 .titleMessage .heading .main {
   font-size: 50px;
 }
@@ -73,7 +74,11 @@ body {
 
 .section {
   padding: 30px 0;
-  border-bottom: solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.exp-title {
+  padding-bottom: 20px;
 }
 
 .aboutImage {
@@ -81,7 +86,7 @@ body {
   height: auto;
   width: 100%;
   margin-top: 5px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   transition: 0.5s ease;
@@ -90,7 +95,7 @@ body {
 .aboutImage:hover {
   transition: 0.5s ease;
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   transition: 0.5s ease;
 }
 
@@ -195,8 +200,8 @@ body {
   background-color: #0f0f3a;
   z-index: 100;
   width: 100%;
-  border-bottom: solid #fff;
-  border-top: solid #fff;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
 }
 
 #navigation li {
@@ -270,7 +275,7 @@ body {
 }
 
 .projects {
-  border-bottom: solid #fff;
+  border-bottom: 2px solid #fff;
   padding-bottom: 40px;
 }
 
@@ -286,7 +291,7 @@ body {
 .fit-log {
   border-radius: 8px;
   margin: 0 10px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   transition: 0.5s ease;
@@ -295,14 +300,14 @@ body {
 /*.binary {
   border-radius: 8px;
   margin: 0 10px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
  .vanilla {
   border-radius: 8px;
   margin: 0 10px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 } */
@@ -313,9 +318,9 @@ body {
 .fit-log:hover
 /* .binary:hover,
 .vanilla:hover*/ {
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   transition: 0.5s ease;
 }
 
@@ -329,10 +334,11 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* .projthree {
+.projthree {
   display: flex;
   justify-content: center;
-} */
+  flex-wrap: wrap;
+}
 
 /* .projects-container {
   display: inline-flex;
@@ -352,8 +358,7 @@ body {
 
 .proj-btn-inner {
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 10px 30px;
   color: #000;
   text-transform: uppercase;
   cursor: pointer;
@@ -361,7 +366,7 @@ body {
   border-radius: 8px;
   width: 200px;
   background-color: transparent;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -371,14 +376,15 @@ body {
 
 .proj-btn-inner:hover {
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   color: #ffffff;
   transition: 0.5s ease;
+  text-decoration: none;
 }
 
 .proj-btn-outer {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* .btn-container {
@@ -400,7 +406,7 @@ body {
 
 .button-1 {
   background-color: transparent;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -409,7 +415,7 @@ body {
 }
 .button-1:hover {
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   color: #ffffff;
   transition: 0.5s ease;
 } */
@@ -431,14 +437,14 @@ body {
 
 iframe {
   border-radius: 8px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 
 iframe:hover {
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   transition: 0.5s ease;
 }
 
@@ -485,6 +491,11 @@ iframe:hover {
 
 .nav-link:hover {
   color: white;
+  cursor: pointer;
+}
+
+#resume:hover {
+  color: #fff;
 }
 
 .nav-link {
@@ -559,10 +570,10 @@ form {
   flex-direction: column;
   padding: 2vw 4vw;
   width: 100%;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   transition: 0.5s ease;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -571,7 +582,7 @@ form {
 
 form input,
 form textarea {
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   margin: 10px 0;
   padding: 10px;
@@ -579,7 +590,7 @@ form textarea {
   background: rgb(212, 212, 212);
   font-size: 16px;
   transition: 0.5s ease;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -602,7 +613,7 @@ form textarea {
 
 form:hover {
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   transition: 0.5s ease;
   /* -webkit-transform: scale(1.03);
   -ms-transform: scale(1.03);
@@ -611,14 +622,14 @@ form:hover {
 }
 form input:hover,
 form textarea:hover {
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   background: rgb(255, 255, 255);
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
   transform: scale(1.02);
   transition: 0.5s ease;
   box-shadow: 0 0 15px 0 #ffffff inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
 }
 
 /* form button:hover {
@@ -647,7 +658,7 @@ form textarea:hover {
 
 .button-1 {
   background-color: transparent;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -656,7 +667,7 @@ form textarea:hover {
 }
 .button-1:hover {
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   color: #ffffff;
   transition: 0.5s ease;
 }
@@ -670,7 +681,7 @@ form textarea:hover {
 .contactButton {
   color: rgb(255, 255, 255);
   padding: 20px 25px;
-  border: 3px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   font-size: 35px;
   border-radius: 12px;
   transition: 0.5s ease;
@@ -687,7 +698,12 @@ form textarea:hover {
 
 .contactButton:hover {
   box-shadow: 0 0 15px 0 #40c057 inset, 0 0 20px 2px #40c057;
-  border: 3px solid #40c057;
+  border: 2px solid #40c057;
   color: #40c057;
   transition: 0.5s ease;
+}
+
+u {
+  background-color: rgba(115, 255, 0, 0.288);
+  text-decoration: none;
 }
