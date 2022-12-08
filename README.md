@@ -1,4 +1,4 @@
-Hello Im Jerry and welcome to my SWE portfolio!
+Hello I'm Jerry and welcome to my SWE portfolio!
 
 I am an Innovative and driven Marine Corps Veteran, with 10 years of experience in the technology industry (civilian, federal, and academically). I am in the process of finishing my bachelor’s in software development while constantly gaining new skills as a full-stack software developer at Land Intelligence, a SaaS Prop-Tech company, in Columbia, SC. My mission is to create easier access to resources for everyone, using my skills to develop scalable business, federal, and personal life-enhancing software.
 
