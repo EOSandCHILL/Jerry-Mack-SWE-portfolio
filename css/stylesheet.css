@@ -79,6 +79,7 @@ body {
 
 .exp-title {
   padding-bottom: 20px;
+  color: #fff;
 }
 
 .aboutImage {
@@ -257,12 +258,12 @@ body {
 }
 
 .col-md-12 h2 {
-  color: #40c057;
+  color: #ffffff;
 }
 
 .container h2 {
   text-align: center;
-  color: #40c057;
+  color: #ffffff;
 }
 
 .statsSection {
@@ -281,7 +282,7 @@ body {
 
 .projects h2 {
   text-align: center;
-  color: #40c057;
+  color: #ffffff;
   padding: 30px 0;
 }
 
@@ -427,7 +428,7 @@ body {
 
 .mediaSection h2 {
   text-align: center;
-  color: #40c057;
+  color: #ffffff;
   padding-bottom: 20px;
 }
 
@@ -453,6 +454,7 @@ iframe:hover {
 }
 
 .my-stack {
+  padding-top: 15px;
   color: #40c057;
   text-align: center;
   font-size: larger;
@@ -594,7 +596,7 @@ form textarea {
   border-radius: 8px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  color: #40c057;
+  color: #000000;
 }
 
 /* form button {
@@ -704,6 +706,8 @@ form textarea:hover {
 }
 
 u {
-  background-color: rgba(115, 255, 0, 0.288);
-  text-decoration: none;
+  /* background-color: rgba(115, 255, 0, 0.288); */
+  text-decoration: underline;
+  text-decoration-color: #40c057;
+  text-decoration-thickness: 2px;
 }
