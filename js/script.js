@@ -13,10 +13,14 @@ $(document).ready(function () {
 
   var typed = new Typed(".typed", {
     strings: [
-      "Software Engineer",
-      "Digital Creator",
-      "Web Developer",
-      "Marine Corps Veteran",
+      "GovTech Software Engineer",
+      "Federal Application Modernization",
+      "Agentic AI Engineering",
+      "RAG and Vector Database Systems",
+      "AI Systems Design",
+      "Secure Cloud Delivery",
+      "Federal Application Security",
+      "Artificial Intelligence Engineer",
     ],
     typeSpeed: 45,
     loop: true,
@@ -25,9 +29,19 @@ $(document).ready(function () {
   });
 
   $("#navigation li a").click(function (e) {
-    e.preventDefault();
     var targetElement = $(this).attr("href");
-    var targetPosition = $(targetElement).offset().top;
+
+    if (!targetElement || targetElement.charAt(0) !== "#") {
+      return;
+    }
+
+    var target = $(targetElement);
+    if (!target.length) {
+      return;
+    }
+
+    e.preventDefault();
+    var targetPosition = target.offset().top;
     $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
   });
 
