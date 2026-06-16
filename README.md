@@ -1,7 +1,7 @@
 # Jerry Mack Software Engineering Portfolio
 
 Personal developer portfolio for Jerry Mack, a Marine Corps Veteran and
-Software Engineer supporting DOJ USTP systems.
+Software Engineer supporting DOJ software systems.
 
 The site is a static HTML/CSS/JavaScript portfolio that highlights federal
 software engineering, Java modernization, secure SDLC work, cloud-connected
