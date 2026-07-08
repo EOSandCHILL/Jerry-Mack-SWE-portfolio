@@ -120,6 +120,13 @@ form:hover,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.learning-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+}
+
 .reading-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -169,6 +176,38 @@ form:hover,
 }
 
 .book-card p {
+  margin-bottom: 0;
+}
+
+.cert-card {
+  text-align: center;
+}
+
+.cert-image-link {
+  aspect-ratio: 4 / 3;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto 18px;
+  max-width: 440px;
+  overflow: hidden;
+  transition: border-color 0.5s ease;
+  width: 100%;
+}
+
+.cert-image-link:hover {
+  border-color: #40c057;
+}
+
+.cert-image {
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.cert-card p {
   margin-bottom: 0;
 }
 
